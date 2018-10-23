@@ -1,0 +1,14 @@
+CONTENT_ASSIST_BACKGROUND_COLOR=0,95,255
+ColorsAndFontsPreferencePage.expandedCategories=Torg.eclipse.ui.presentation.default
+ColorsAndFontsPreferencePage.selectedElement=Torg.eclipse.team.cvs.ui.fontsandcolors
+ENABLED_DECORATORS=org.eclipse.jdt.ui.override.decorator\:true,org.eclipse.jdt.ui.interface.decorator\:false,org.eclipse.jdt.ui.buildpath.decorator\:true,org.eclipse.pde.ui.binaryProjectDecorator\:false,org.eclipse.team.cvs.ui.decorator\:false,org.eclipse.ui.LinkedResourceDecorator\:true,org.eclipse.ui.VirtualResourceDecorator\:true,org.eclipse.ui.ContentTypeDecorator\:true,org.eclipse.ui.ResourceFilterDecorator\:false,
+ERROR_COLOR=255,71,0
+HYPERLINK_COLOR=0,246,255
+eclipse.preferences.version=1
+org.eclipse.search.ui.match.highlight=11,0,255
+org.eclipse.ui.workbench.ACTIVE_NOFOCUS_TAB_BG_END=165,101,255
+org.eclipse.ui.workbench.ACTIVE_NOFOCUS_TAB_BG_START=26,0,255
+org.eclipse.ui.workbench.ACTIVE_NOFOCUS_TAB_TEXT_COLOR=209,208,255
+org.eclipse.ui.workbench.ACTIVE_TAB_BG_END=187,187,187
+org.eclipse.ui.workbench.ACTIVE_TAB_BG_START=0,104,255
+org.eclipse.ui.workbench.INACTIVE_TAB_BG_START=78,161,255
