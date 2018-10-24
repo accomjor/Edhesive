@@ -14,12 +14,12 @@ public class NewClass {
     /*
     
     Edhesive class normal template for all purposes.
-    version 1.4
+    version 1.3
     
     */
     
     
-    /***************************************************************************************************************/
+    /***********************************************/
     
     
     public static String s;
@@ -35,7 +35,7 @@ public class NewClass {
     }
     
     
-    /***************************************************************************************************************/
+    /***********************************************/
     
     
     // print a message to the console on a new line.
@@ -53,7 +53,7 @@ public class NewClass {
     }
     
     // print a message to the console removing any
-    // proceeding and preceding spaces.
+    // proceeding and preceeding spaces.
     // Updated: Version 1.0
     public static void sayStripped(String s){
         int i, count, bC, aC;

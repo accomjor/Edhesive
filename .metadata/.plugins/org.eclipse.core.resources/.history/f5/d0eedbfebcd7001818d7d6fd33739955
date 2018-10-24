@@ -47,7 +47,7 @@ public class Main{
         say("Almost done! Please enter a number to scramble.");
         d = scan.nextDouble();
         d = numberScramble(d);
-        say("The scrambled number is: " + d);
+        say("he scrambled number is: " + d);
         
     }
     

@@ -44,10 +44,6 @@ public class Main{
         } else {
             say("Too bad, that isn't an Edhesive Palindrome.");
         }
-        say("Almost done! Please enter a number to scramble.");
-        d = scan.nextDouble();
-        d = numberScramble(d);
-        say("The scrambled number is: " + d);
         
     }
     
@@ -132,17 +128,6 @@ public class Main{
         }
         
         return s;
-    }
-    
-    public static double numberScramble(double num){
-    	if(num < 0){
-    		return 0.0;
-    	} else {
-    		num += 5;
-    		num /= 2;
-    		num = Math.pow(num, 0.5);
-    		return num;
-    	}
     }
     
     // print a message to the console on a new line.

@@ -53,7 +53,7 @@ public class NewClass {
     }
     
     // print a message to the console removing any
-    // proceeding and preceding spaces.
+    // proceeding and preceeding spaces.
     // Updated: Version 1.0
     public static void sayStripped(String s){
         int i, count, bC, aC;

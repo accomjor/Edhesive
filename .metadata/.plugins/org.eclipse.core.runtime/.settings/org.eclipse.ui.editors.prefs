@@ -1,4 +1,4 @@
-AbstractTextEditor.Color.Background=178,205,255
+AbstractTextEditor.Color.Background=37,37,37
 AbstractTextEditor.Color.Background.SystemDefault=false
 AbstractTextEditor.Color.Foreground=6,0,192
 AbstractTextEditor.Color.Foreground.SystemDefault=false
@@ -6,7 +6,7 @@ AbstractTextEditor.Color.SelectionBackground=0,148,224
 AbstractTextEditor.Color.SelectionBackground.SystemDefault=false
 AbstractTextEditor.Color.SelectionForeground=5,0,168
 AbstractTextEditor.Color.SelectionForeground.SystemDefault=false
-currentLineColor=145,115,205
+currentLineColor=78,78,78
 eclipse.preferences.version=1
 overviewRuler_migration=migrated_3.1
 printMarginColor=0,87,197
