@@ -34,26 +34,6 @@ public class NewClass {
 
     }
     
-    public static int randomize(int a, int b){
-    	int random = 0;
-    	return random;
-    }
-    
-    public static int randomize(int a){
-    	int random = 0;
-    	return random;
-    }
-    
-    public static int randomize(double a, double b){
-    	int random = 0;
-    	return random;
-    }
-    
-    public static int randomize(double a){
-    	int random = 0;
-    	return random;
-    }
-    
     
     /***************************************************************************************************************/
     
