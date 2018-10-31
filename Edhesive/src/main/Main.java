@@ -14,7 +14,7 @@ public class Main {
     /*
     
     Edhesive class normal template for all purposes.
-    version 1.4
+    version 1.5
     
     */
     
@@ -31,59 +31,78 @@ public class Main {
     public static void main(String args[]){
         
         // Code goes here..
-
+    	
     }
+    
+    public static int randomize(int a, int b){
+    	int max = Math.max(a, b);
+    	int min = Math.min(a, b);
+    	int random = 0;
+    	return random;
+    }
+    
+    public static int randomize(int a){
+    	int random = 0;
+    	return random;
+    }
+    
+    public static int randomize(double a, double b){
+    	int random = 0;
+    	return random;
+    }
+    
+    public static int randomize(double a){
+    	int random = 0;
+    	return random;
+}
     
     
     /***************************************************************************************************************/
     
     
-    // print a message to the console on a new line.
+    // print a STRING to the console on a new line.
     // Updated: Version 1.0
     public static void say(String string){
         System.out.println(string);
         return;
     }
     
-    // print a raw message to the console.
+    
+    // print an INT to the console on a new line.
+    // Updated: Version 1.5
+    public static void say(int i){
+        System.out.println(i + "");
+        return;
+    }
+    
+    
+    // print a DOUBLE to the console on a new line.
+    // Updated: Version 1.5
+    public static void say(double d){
+        System.out.println(d + "");
+        return;
+    }
+    
+    // print a raw STRING to the console.
     // Updated: Version 1.1
     public static void raw(String string){
         System.out.print(string);
         return;
     }
     
-    // print a message to the console removing any
-    // proceeding and preceding spaces.
-    // Updated: Version 1.0
-    public static void sayStripped(String s){
-        int i, count, bC, aC;
-        boolean f = false;
-        count = 0;
-        // After Word Space Count
-        aC = 0;
-        // Before Word Space Count
-        bC = 0;
-        // Remove spaces before word
-        for(i = 0; i < s.length(); i++){
-            if(s.charAt(i) == ' '){
-                bC++;
-            } else {
-                break;
-            }
-        }
-        s = s.substring(0 + bC, s.length());
-        
-        // Remove spaces after word
-        for(i = s.length() - 1; i > 0; i--){
-            if(s.charAt(i) == ' '){
-                aC++;
-            } else {
-                break;
-            }
-        }
-        s = s.substring(0, s.length() - aC);
-        say(s);
+    // print a raw INT to the console.
+    // Updated: Version 1.5
+    public static void raw(int i){
+        System.out.print(i + "");
         return;
     }
+    
+    // print a raw DOUBLE to the console.
+    // Updated: Version 1.5
+    public static void raw(double d){
+        System.out.print(d + "");
+        return;
+    }
+    
     
 }
