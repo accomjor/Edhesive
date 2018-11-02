@@ -1,7 +1,6 @@
 package docs;
 
 import java.util.Scanner;
-import java.util.ArrayList;
 import java.lang.Math;
 import java.lang.String;
 import java.lang.Exception;
@@ -32,8 +31,17 @@ public class NewClass {
     public static void main(String args[]){
         
         // Code goes here..
+    	printSport(8);
     	
     }
+    
+    public static void printSport(double  n) {
+        System.out.print("football ");
+        printSport((int)(n));
+    }
+    public static void printSport(int n) {
+        System.out.print("basketball ");
+    } 
     
     /***************************************************************************************************************/
     

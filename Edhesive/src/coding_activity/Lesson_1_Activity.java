@@ -1,4 +1,4 @@
-package docs;
+package coding_activity;
 
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -9,7 +9,7 @@ import java.lang.Character;
 import java.lang.StringIndexOutOfBoundsException;
 import java.lang.IndexOutOfBoundsException;
 
-public class NewClass {
+public class Lesson_1_Activity {
     
     
     /*

@@ -1,7 +1,6 @@
 package docs;
 
 import java.util.Scanner;
-import java.util.ArrayList;
 import java.lang.Math;
 import java.lang.String;
 import java.lang.Exception;

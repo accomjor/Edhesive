@@ -3,7 +3,6 @@ package docs;
 import docs.Jordan;
 
 import java.util.Scanner;
-import java.util.ArrayList;
 import java.lang.Math;
 import java.lang.String;
 import java.lang.Exception;
@@ -28,9 +27,27 @@ public class NewOptimizedClass extends Jordan {
     public static void main(String args[]){
         
         // Code goes here..
+    	String spelling[] = {"against", "forms", "belief", "government", "democratic", "movement", "understanding", "single", "followed", "scenario"};
+
+    	System.out.println( average( mystery(spelling)));
     	
     }
     
+    public static double average(int nums[]) {
+        int sum =0;
+        for (int i = 0; i < nums.length; i++) {
+            sum += nums[i];
+        }
+        return (1.0 * sum) / nums.length;
+    } //average
+
+    public static int[] mystery(String a[]) {
+        int temp [] = new int[a.length];
+        for (int i = 0; i < a.length; i++) {
+            temp[i] = a[i].length();
+        }
+        return temp;
+    }  //mystery
     
     
     /***************************************************************************************************************/

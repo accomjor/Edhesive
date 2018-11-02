@@ -3,7 +3,6 @@ package docs;
 import docs.Jordan;
 
 import java.util.Scanner;
-import java.util.ArrayList;
 import java.lang.Math;
 import java.lang.String;
 import java.lang.Exception;
@@ -28,9 +27,15 @@ public class NewOptimizedClass extends Jordan {
     public static void main(String args[]){
         
         // Code goes here..
+    	mystery("hamster");
     	
     }
     
+    public static void mystery(String wo) {
+        System.out.println(wo);
+        if (wo.length() > 0)
+            mystery( wo.substring(0, wo.length() - 1));
+    }
     
     
     /***************************************************************************************************************/

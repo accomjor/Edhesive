@@ -1,7 +1,6 @@
 package docs;
 
 import java.util.Scanner;
-import java.util.ArrayList;
 import java.lang.Math;
 import java.lang.String;
 import java.lang.Exception;
@@ -32,8 +31,10 @@ public class NewClass {
     public static void main(String args[]){
         
         // Code goes here..
+    	System.out.print(21.0/5);
     	
     }
+    
     
     /***************************************************************************************************************/
     

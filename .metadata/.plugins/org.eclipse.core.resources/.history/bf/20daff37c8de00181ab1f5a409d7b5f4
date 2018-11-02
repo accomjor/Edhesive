@@ -1,7 +1,6 @@
 package docs;
 
 import java.util.Scanner;
-import java.util.ArrayList;
 import java.lang.Math;
 import java.lang.String;
 import java.lang.Exception;
@@ -32,7 +31,18 @@ public class NewClass {
     public static void main(String args[]){
         
         // Code goes here..
+    	int b [] = {1, 2, 3};
+    	System.out.println(mystery(b, 3));
     	
+    }
+    
+    public static int mystery(int a[], int x) {
+        int c = 0;
+        for(int i = 0; i < a.length; i++) {
+            if (a[i] == x)
+                c++;
+        }
+        return c;
     }
     
     /***************************************************************************************************************/
