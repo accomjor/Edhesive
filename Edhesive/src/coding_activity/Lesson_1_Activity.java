@@ -32,6 +32,25 @@ public class Lesson_1_Activity {
     public static void main(String args[]){
         
         // Code goes here..
+    	boolean stop = false;
+    	i = 0;
+    	Scanner scan = new Scanner(System.in);
+    	ArrayList<String> list = new ArrayList<String>();
+    	while(!stop){
+	    	s = scan.nextLine();
+	    	if(!s.equalsIgnoreCase("stop")){
+	    		list.add(s);
+	    		i++;
+	    	} else {
+	    		stop = true;
+	    	}
+    	}
+    	say(list + "");
+    	if(list.size() > 0){
+	    	list.remove(i - 1);
+	    	list.remove(0);
+    	}
+    	say(list + "");
     	
     }
     
