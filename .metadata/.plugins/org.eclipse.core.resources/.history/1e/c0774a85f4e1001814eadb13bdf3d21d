@@ -38,14 +38,13 @@ public class Lesson_1_Activity {
     	ArrayList<String> list = new ArrayList<String>();
     	while(!stop){
 	    	s = scan.nextLine();
-	    	if(!s.equals("STOP")){
+	    	if(!s.equalsIgnoreCase("stop")){
 	    		list.add(s);
 	    		i++;
 	    	} else {
 	    		stop = true;
 	    	}
     	}
-    	say(list.size() + "");
     	say(list + "");
     	if(list.size() > 2){
 	    	list.remove(i - 1);

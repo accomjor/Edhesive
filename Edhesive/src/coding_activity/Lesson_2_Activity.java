@@ -9,7 +9,7 @@ import java.lang.Character;
 import java.lang.StringIndexOutOfBoundsException;
 import java.lang.IndexOutOfBoundsException;
 
-public class Lesson_1_Activity {
+public class Lesson_2_Activity {
     
     
     /*
@@ -33,25 +33,18 @@ public class Lesson_1_Activity {
         
         // Code goes here..
     	boolean stop = false;
-    	i = 0;
-    	Scanner scan = new Scanner(System.in);
-    	ArrayList<String> list = new ArrayList<String>();
+    	Scanner scan = new Scanner (System.in);
+    	ArrayList <String> list = new ArrayList <String>();
     	while(!stop){
-	    	s = scan.nextLine();
-	    	if(!s.equals("STOP")){
-	    		list.add(s);
-	    		i++;
-	    	} else {
-	    		stop = true;
-	    	}
+    		String s = scan.nextLine();
+    		if(s.equals("STOP"))
+    			stop = true;
+    		else if(s.contains("a"))
+    			list.add(s);
     	}
-    	say(list.size() + "");
-    	say(list + "");
-    	if(list.size() > 2){
-	    	list.remove(i - 1);
-	    	list.remove(0);
+    	for(i = 0; i < list.size(); i++){
+    		say(list.get(i));
     	}
-    	say(list + "");
     	
     }
     
