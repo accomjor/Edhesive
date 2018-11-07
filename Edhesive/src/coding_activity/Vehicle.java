@@ -17,6 +17,19 @@ public class Vehicle {
 			location = -20;
 	}
 	
+	public String toString(){
+		String s = "";
+		for(int i = 0; i < (location + 20); i++){
+			s = s + " ";
+		}
+		s = s + "@";
+		return s;
+	}
+	
+	public int getLocation(){
+		return location;
+	}
+	
 	public void forward(){
 		if(location < 20)
 			location++;
