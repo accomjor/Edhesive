@@ -50,7 +50,8 @@ public class Dashboard {
         			+ miles
         			+ "\nCheck Engine: "
         			+ (checkEngine ? "On" : "Off");
-        return stats;
+        System.out.print(stats);
+        return "";
     }
 
     public void accelerate() {
@@ -63,14 +64,8 @@ public class Dashboard {
     	int distance = 0;
     	if(numMinutes <= 720){
 	        distance = (numMinutes * (speedometer / 60));
-	    	if(odometer + distance > 99999) {
-	    		odometer = 0;
-	    		checkEngine = true;
-	    		
-	    	} else {
-		        odometer += distance;
-	    	}
     	}
+    	odometer += distance;
         
     }
 
