@@ -61,7 +61,7 @@ public class Dashboard {
     public void drive(int numMinutes) {
     	
     	int distance = 0;
-    	if(numMinutes < 720){
+    	if(numMinutes <= 720){
 	        distance = (numMinutes * (speedometer / 60));
 	    	if(odometer + distance > 99999) {
 	    		odometer = 0;
