@@ -6,11 +6,14 @@ public class Student {
 	String lname = "";
 	int grade;
 	double GPA;
-	static int id = 0;
+	static int id;
 	
 	public Student(){
-
-		this("None", "None", 0, 0.0);
+		fname = "None";
+		lname = "None";
+		grade = 0;
+		GPA = 0.0;
+		id++;
 	}
 	
 	public Student(String firstName, String lastName, int gradeLevel, double gpa){
