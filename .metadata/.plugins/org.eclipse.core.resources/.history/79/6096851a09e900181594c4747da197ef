@@ -22,6 +22,7 @@ public class Lesson_1_Activity {
     
     /***************************************************************************************************************/
     
+    
     public static String s;
     public static char c;
     public static int i;
