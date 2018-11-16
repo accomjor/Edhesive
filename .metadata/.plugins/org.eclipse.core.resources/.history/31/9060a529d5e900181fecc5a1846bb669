@@ -63,7 +63,7 @@ public class Boxcar
         return numUnits 
         	 + " " 
         	 + cargo 
-        	 + "	" 
+        	 + "    " 
         	 + (repair ? "in repair" : "in service")
         ;
     }

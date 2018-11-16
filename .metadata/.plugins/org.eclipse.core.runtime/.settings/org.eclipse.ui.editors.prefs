@@ -8,5 +8,6 @@ AbstractTextEditor.Color.SelectionForeground=5,0,168
 AbstractTextEditor.Color.SelectionForeground.SystemDefault=false
 currentLineColor=78,78,78
 eclipse.preferences.version=1
+occurrenceIndicationColor=78,78,78
 overviewRuler_migration=migrated_3.1
 printMarginColor=0,87,197

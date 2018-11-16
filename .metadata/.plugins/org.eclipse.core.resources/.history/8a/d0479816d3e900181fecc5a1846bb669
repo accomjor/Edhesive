@@ -60,12 +60,8 @@ public class Boxcar
     // and a tab between the value for cargo and "in repair"/"in service"
     public String toString()
     {
-        return numUnits 
-        	 + " " 
-        	 + cargo 
-        	 + "	" 
-        	 + (repair ? "in repair" : "in service")
-        ;
+        /* missing code (don't forget to update the return statement) */
+        return "";
     }
 
     // This method adds 1 to the number of units in the BoxCar. The maximum
@@ -73,24 +69,14 @@ public class Boxcar
     // would go beyond the maximum, keep numUnits at the max capacity.
     // If the repair variable is true, then numUnits may only be set to 0.
     public void loadCargo() {
-        if(
-        	numUnits < 10
-		){
-        	numUnits++;
-        }
-        if(
-        	repair
-        ){
-        	numUnits = 0;
-        }
+        /* missing code */
     }
 
     // The getCargo method returns the cargo of the boxcar.
     public String getCargo()
     {
-        return
-        	cargo
-        ;
+        /* missing code (don't forget to update the return statement) */
+        return "";
     }
 
     // The setCargo method sets the cargo type of the boxcar. The cargo variable is
@@ -100,27 +86,19 @@ public class Boxcar
     // to "gizmos".
     public void setCargo(String c)
     {
-    	if(    c.equalsIgnoreCase("gizmos") 
-        	|| c.equalsIgnoreCase("gadgets") 
-        	|| c.equalsIgnoreCase("widgets") 
-        	|| c.equalsIgnoreCase("wadgets")
-        ){
-        	cargo = c.toLowerCase();
-        } else { cargo = "gizmos"; }
+        /* missing code */
     }
 
     // The isFull method returns true if numUnits is equal to 10, false otherwise.
     public boolean isFull()
     {
-        return 
-        	((numUnits == 10) ? true : false)
-        ;
+        /* missing code (don't forget to update the return statement) */
+        return false;
     }
 
     // The callForRepair method sets the variable repair to true, and numUnits to 0.
     public void callForRepair()
     {
-        repair =  true;
-        numUnits = 0;
+        /* missing code */
     }
 }
