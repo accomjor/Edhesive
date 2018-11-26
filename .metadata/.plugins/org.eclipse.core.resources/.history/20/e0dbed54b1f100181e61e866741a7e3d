@@ -61,9 +61,7 @@ public class FreightTrain
     // This method sets the cargo type of all the boxcars in the entire train.
     public void setCargo(String c)
     {
-        for(Boxcar b : train){
-        	b.setCargo(c);
-        }
+        /* missing code */
     }
 
     // This method sets the boxcars to the pattern "gizmos", "gadgets", "widgets",
@@ -71,18 +69,7 @@ public class FreightTrain
     // until the end of the train.
     public void setMultiCargo()
     {
-    	int boxcarNum = 1;
-        for(Boxcar b : train){
-        	b.setCargo((boxcarNum == 1 ? 
-        					"gizmos" :
-        			   (boxcarNum == 2 ?
-        					"gadgets" :
-        			   (boxcarNum == 3 ?
-        					"widgets" :
-        					"wadgets"
-        	))));
-        	boxcarNum = (boxcarNum > 4 ? boxcarNum = 1 : boxcarNum++);
-        }
+        /* missing code */
     }
 
     // This method fills every boxcar in the train to max capacity of 10.
@@ -90,9 +77,7 @@ public class FreightTrain
     // repair variable is false.
     public void fillTrain()
     {
-        for(Boxcar b : train){
-        	
-        }
+        /* missing code */
     }
 
     // This method sets the Boxcar at location i’s repair variable to true.
