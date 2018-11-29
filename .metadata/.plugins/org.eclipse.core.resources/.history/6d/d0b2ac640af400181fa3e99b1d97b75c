@@ -81,7 +81,24 @@ public class FreightTrain
         					"widgets" :
         					"wadgets"
         	))));
-        	boxcarNum = (boxcarNum > 3 ? 1 : (boxcarNum + 1));
+        	/*
+        	if(boxcarNum == 1){
+        		b.setCargo("gizmos");
+        	} else if(boxcarNum == 2){
+        		b.setCargo("gadgets");
+        	} else if(boxcarNum == 3){
+        		b.setCargo("widgets");
+        	} else {
+        		b.setCargo("wadgets");
+        	}
+        	*/
+        	
+        	if(boxcarNum < 4){
+        		boxcarNum++;
+        	} else {
+        		boxcarNum = 1;
+        	}
+        	//boxcarNum = (boxcarNum > 4 ? boxcarNum = 1 : boxcarNum++);
         }
     }
 
@@ -91,9 +108,7 @@ public class FreightTrain
     public void fillTrain()
     {
         for(Boxcar b : train){
-        	while(!b.isFull()){
-        		b.loadCargo();
-        	}
+        	b = new Boxcar(b.getCargo(), 10, false);
         }
     }
 

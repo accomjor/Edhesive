@@ -81,7 +81,13 @@ public class FreightTrain
         					"widgets" :
         					"wadgets"
         	))));
-        	boxcarNum = (boxcarNum > 3 ? 1 : (boxcarNum + 1));
+        	
+        	if(boxcarNum < 4){
+        		boxcarNum++;
+        	} else {
+        		boxcarNum = 1;
+        	}
+        	//boxcarNum = (boxcarNum > 4 ? boxcarNum = 1 : boxcarNum++);
         }
     }
 
@@ -91,9 +97,7 @@ public class FreightTrain
     public void fillTrain()
     {
         for(Boxcar b : train){
-        	while(!b.isFull()){
-        		b.loadCargo();
-        	}
+        	b = new Boxcar(b.getCargo(), 10, false);
         }
     }
 

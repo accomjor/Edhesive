@@ -81,7 +81,7 @@ public class FreightTrain
         					"widgets" :
         					"wadgets"
         	))));
-        	boxcarNum = (boxcarNum > 3 ? 1 : (boxcarNum + 1));
+        	boxcarNum = (boxcarNum > 4 ? 1 : (boxcarNum + 1));
         }
     }
 
