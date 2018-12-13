@@ -1,0 +1,7 @@
+package assigment;
+
+public class Tester extends Jordan {
+	UltimatePlayer player = new UltimatePlayer("Jordan", "Accomando", "cutter");
+	
+	//say(player + "");
+}

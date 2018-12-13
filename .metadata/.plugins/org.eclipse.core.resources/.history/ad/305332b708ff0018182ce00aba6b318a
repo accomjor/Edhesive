@@ -7,11 +7,8 @@ public class UltimatePlayer extends Person {
 	
 	public UltimatePlayer(String f, String l, String p) {
 		super(f, l);
+		position = p;
 		jerseyNumber++;
-		if(p.equals("handler") || p.equals("cutter"))
-			position = p;
-		else
-			position = "handler";
 	}
 	
 	public String getPosition(){
@@ -21,9 +18,9 @@ public class UltimatePlayer extends Person {
 	public String toString(){
 		return
 			super.toString()
-		+   "\n   Jersey #: "
+		+   "\n	Jersey #: "
 		+   jerseyNumber
-		+   "\n   Position: "
+		+   "\n	Position: "
 		+   position
 		;
 	}

@@ -1,0 +1,6 @@
+package assigment;
+
+public class Tester {
+	UltimatePlayer player = new UltimatePlayer("Jordan", "Accomando", "cutter");
+	
+}

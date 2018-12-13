@@ -7,11 +7,11 @@ public class UltimatePlayer extends Person {
 	
 	public UltimatePlayer(String f, String l, String p) {
 		super(f, l);
-		jerseyNumber++;
 		if(p.equals("handler") || p.equals("cutter"))
 			position = p;
 		else
 			position = "handler";
+		this.jerseyNumber++;
 	}
 	
 	public String getPosition(){
