@@ -1,0 +1,9 @@
+package assigment;
+
+public class UltimatePlayer extends Person {
+
+	public UltimatePlayer(String f, String l) {
+		super(f, l);
+	}
+
+}
