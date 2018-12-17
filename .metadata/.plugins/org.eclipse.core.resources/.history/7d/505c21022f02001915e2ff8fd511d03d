@@ -3,7 +3,6 @@ package assigment;
 public class UltimatePlayer extends Person {
 
 	private static int jerseyNumber;
-	private int num;
 	private String position = "";
 	
 	public UltimatePlayer(String f, String l, String p) {
@@ -13,7 +12,6 @@ public class UltimatePlayer extends Person {
 		else
 			position = "handler";
 		jerseyNumber++;
-		num = jerseyNumber;
 	}
 	
 	public String getPosition(){
@@ -24,7 +22,7 @@ public class UltimatePlayer extends Person {
 		return
 			super.toString()
 		+   "\n   Jersey #: "
-		+   num
+		+   this.jerseyNumber
 		+   "\n   Position: "
 		+   position
 		;

@@ -1,0 +1,10 @@
+package assigment;
+
+public class Captain extends UltimatePlayer {
+
+	public Captain(String f, String l, String p) {
+		super(f, l, p);
+		
+	}
+
+}

@@ -1,0 +1,10 @@
+package assigment;
+
+public class Coach extends Person {
+
+	public Coach(String f, String l) {
+		super(f, l);
+		// TODO Auto-generated constructor stub
+	}
+
+}
