@@ -1,0 +1,23 @@
+package assigment;
+
+import java.util.ArrayList;
+
+public class UltimateTeam {
+	
+	ArrayList<UltimatePlayer> players;
+	ArrayList<Coach> coaches;
+	
+	public UltimateTeam (ArrayList<UltimatePlayer> p, ArrayList<Coach> c) {
+		players = p;
+		coaches = c;
+	}
+	
+	public String getCutters () {
+		String cutters = "";
+		for(UltimatePlayer player : players){
+			cutters += (player.getPosition().equals("cutter") ? player.toString() : "");
+		}
+		return cutters;
+	}
+	
+}

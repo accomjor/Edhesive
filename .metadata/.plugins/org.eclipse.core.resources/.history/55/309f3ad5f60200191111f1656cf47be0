@@ -1,0 +1,11 @@
+package assigment;
+
+import java.util.ArrayList;
+
+public class UltimateTeam {
+	
+	ArrayList<UltimatePlayer> players;
+	ArrayList<Coach> coaches;
+	
+	
+}
