@@ -6,7 +6,7 @@ package assignment;
  * A class which represents a car dashboard.
  */
 
-public class Dashboard implements Comparable {
+public class Dashboard {
 
     private int odometer;
     private int speedometer;
@@ -73,10 +73,5 @@ public class Dashboard implements Comparable {
     	}
         
     }
-
-	public int compareTo(Object arg0) {
-		
-		return 0;
-	}
 
 }
