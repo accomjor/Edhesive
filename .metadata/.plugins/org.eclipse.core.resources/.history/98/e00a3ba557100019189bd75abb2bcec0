@@ -102,7 +102,7 @@ public class Dashboard implements Comparable {
 			"Race " 
 			+ raceNum 
 			+ ": "
-			//+ (speedometer > 100 && d.speedometer > 100 ? )
+			+ (speedometer > 100 && d.speedometer > 100 ? )
 		;
 	}
 }

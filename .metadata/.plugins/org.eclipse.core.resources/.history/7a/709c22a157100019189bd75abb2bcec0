@@ -10,7 +10,6 @@ public class Dashboard implements Comparable {
 
     private int odometer;
     private int speedometer;
-    private static int raceNum = 0;
     private boolean checkEngine;
 
     public Dashboard() {
@@ -87,22 +86,4 @@ public class Dashboard implements Comparable {
 		return 0;
 	}
 
-	public String race(Dashboard d, int acc1, int acc2){
-		raceNum++;
-		// TODO change while statement, doesn't work cause never goes over 100
-		while(speedometer < 100 && d.speedometer < 100){
-			for(int i = 0; i < acc1; i++){
-				accelerate();
-			}
-			for(int i = 0; i < acc2; i++){
-				d.accelerate();
-			}
-		}
-		return 
-			"Race " 
-			+ raceNum 
-			+ ": "
-			//+ (speedometer > 100 && d.speedometer > 100 ? )
-		;
-	}
 }
