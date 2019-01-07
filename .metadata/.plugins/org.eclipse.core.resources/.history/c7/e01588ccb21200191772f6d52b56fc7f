@@ -108,7 +108,9 @@ public class Dashboard implements Comparable {
 				"Neither car stalls"))))
 			+ (  checkEngine ? "\nFirst car stalled out!"   : "")
 			+ (d.checkEngine ? "\nSecond car stalled out!" : "")
+			+ "\n"
 			+ toString()
+			+ "\n"
 			+ d.toString()
 			+ "\n\n"
 			+ ( checkEngine &&  d.checkEngine ? "It's a tie!" :

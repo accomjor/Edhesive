@@ -104,21 +104,14 @@ public class Dashboard implements Comparable {
 			+ ( checkEngine &&  d.checkEngine ? "Both cars stall" : 
 			  ( checkEngine && !d.checkEngine ? "Car 1 stalls"    :
 			  (!checkEngine &&  d.checkEngine ? "Car 2 stalls"    :
-			  ( speedometer ==  d.speedometer ? "Neither car stalls, both have the same speed" :
-				"Neither car stalls"))))
-			+ (  checkEngine ? "\nFirst car stalled out!"   : "")
-			+ (d.checkEngine ? "\nSecond car stalled out!" : "")
+				"Neither car stalls")))
+			+ (  checkEngine ? "\nCar 1 stalled out!" : "")
+			+ (d.checkEngine ? "\nCar 2 stalled out!" : "")
+			+ "\n"
 			+ toString()
+			+ "\n"
 			+ d.toString()
-			+ "\n\n"
-			+ ( checkEngine &&  d.checkEngine ? "It's a tie!" :
-			  ( speedometer ==  d.speedometer ? "It's a tie!" :
-			  ((checkEngine && !d.checkEngine) || (speedometer < d.speedometer) ? "Car 2 has won the race!" :
-				 "Car 1 has won the race!")))
+			
 		;
-	}
-	
-	public String difference(Dashboard d){
-		return "";
 	}
 }

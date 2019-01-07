@@ -89,6 +89,7 @@ public class Dashboard implements Comparable {
 
 	public String race(Dashboard d, int acc1, int acc2){
 		raceNum++;
+		// TODO change while statement, doesn't work cause never goes over 100
 		while(!checkEngine && !d.checkEngine){
 			for(int i = 0; i < acc1; i++){
 				accelerate();
@@ -98,27 +99,10 @@ public class Dashboard implements Comparable {
 			}
 		}
 		return 
-			"\nRace " 
+			"Race " 
 			+ raceNum 
 			+ ": "
-			+ ( checkEngine &&  d.checkEngine ? "Both cars stall" : 
-			  ( checkEngine && !d.checkEngine ? "Car 1 stalls"    :
-			  (!checkEngine &&  d.checkEngine ? "Car 2 stalls"    :
-			  ( speedometer ==  d.speedometer ? "Neither car stalls, both have the same speed" :
-				"Neither car stalls"))))
-			+ (  checkEngine ? "\nFirst car stalled out!"   : "")
-			+ (d.checkEngine ? "\nSecond car stalled out!" : "")
-			+ toString()
-			+ d.toString()
-			+ "\n\n"
-			+ ( checkEngine &&  d.checkEngine ? "It's a tie!" :
-			  ( speedometer ==  d.speedometer ? "It's a tie!" :
-			  ((checkEngine && !d.checkEngine) || (speedometer < d.speedometer) ? "Car 2 has won the race!" :
-				 "Car 1 has won the race!")))
+			//+ (speedometer > 100 && d.speedometer > 100 ? )
 		;
-	}
-	
-	public String difference(Dashboard d){
-		return "";
 	}
 }
