@@ -96,12 +96,18 @@ public class Dashboard implements Comparable {
 			for(int i = 0; i < acc2; i++){
 				d.accelerate();
 			}
-			break;
 		}
-		speedometer = (checkEngine ? 0 : speedometer);
-		d.speedometer = (d.checkEngine ? 0 : d.speedometer);
 		return 
-			  (  checkEngine ? "\nFirst car stalled out!"   : "")
+			/*"\nRace " 
+			+ raceNum 
+			+ ": "
+			+ */
+			  ( checkEngine &&  d.checkEngine ? "Both cars stall" : 
+			  ( checkEngine && !d.checkEngine ? "Car 1 stalls"    :
+			  (!checkEngine &&  d.checkEngine ? "Car 2 stalls"    :
+			  ( speedometer ==  d.speedometer ? "Neither car stalls, both have the same speed" :
+				"Neither car stalls"))))
+			+ (  checkEngine ? "\nFirst car stalled out!"   : "")
 			+ (d.checkEngine ? "\nSecond car stalled out!" : "")
 			+ toString()
 			+ d.toString()
@@ -109,7 +115,7 @@ public class Dashboard implements Comparable {
 			+ ( checkEngine &&  d.checkEngine ? "It's a tie!" :
 			  ( speedometer ==  d.speedometer ? "It's a tie!" :
 			  ((checkEngine && !d.checkEngine) || (speedometer < d.speedometer) ? "Car 2 has won the race!" :
-				"Car 1 has won the race!")))
+				 "Car 1 has won the race!")))
 		;
 	}
 	
