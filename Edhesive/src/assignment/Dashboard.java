@@ -10,7 +10,6 @@ public class Dashboard implements Comparable {
 
     private int odometer;
     private int speedometer;
-    private static int raceNum = 0;
     private boolean checkEngine;
 
     public Dashboard() {
@@ -88,7 +87,6 @@ public class Dashboard implements Comparable {
 	}
 
 	public String race(Dashboard d, int acc1, int acc2){
-		raceNum++;
 		while(!checkEngine && !d.checkEngine){
 			for(int i = 0; i < acc1; i++){
 				accelerate();
@@ -114,6 +112,18 @@ public class Dashboard implements Comparable {
 	}
 	
 	public String difference(Dashboard d){
-		return "";
+		boolean f = (odometer > d.odometer ? true : false);
+		double dif = Math.abs(odometer - d.odometer);
+		double time = (60 * (f ? (dif / d.speedometer) : (dif / speedometer)));
+		if(f)
+			return "Second car will need to drive for "
+				+  (int) time
+				+  " minutes to catch first car."
+				;
+		else
+			return "First car will need to drive for "
+				+  (int) time
+				+  " minutes to catch second car."
+				;
 	}
 }

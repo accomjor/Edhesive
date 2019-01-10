@@ -1,0 +1,23 @@
+package coding_activity;
+
+import java.io.*;
+import java.lang.*;
+import java.util.*;
+
+import assignment.Jordan;
+
+public class ClassWork {
+	public static void main(String args[]){
+		try {
+			Runtime r = Runtime.getRuntime();
+			Process p = r.exec("//sbin//ifconfig");
+			BufferedReader b = new BufferedReader(new InputStreamReader(p.getInputStream()));
+			String l;
+			while((l = b.readLine()) != null);
+				Jordan.say(l);
+			
+		} catch (IOException e) {
+			Jordan.say("Boi... there was an error");
+		}
+	}
+}

@@ -1,0 +1,23 @@
+package coding_activity;
+
+import java.io.*;
+import java.lang.*;
+import java.util.*;
+
+import assignment.Jordan;
+
+public class ClassWork {
+	public static void main(String[] args) { // standard main class
+		try{
+		Runtime ReMo = Runtime.getRuntime(); //Runtime.getRuntime();
+		//Use runime to instantiate a new subprocess
+		Process LinProc = ReMo.exec("//sbin//ifconfig -a");
+		BufferedReader keyIn = new BufferedReader(new InputStreamReader(LinProc.getInputStream())); //receive stream input from the subprocess
+		String line;
+		while((line = keyIn.readLine()) !=null) // print out put line by line
+		System.out.println(line);
+		}catch(IOException ex) { // exception handling for missing or failied subprocess initiation
+		System.out.println("ExeNativeCmd.execInUnix:error");
+		};
+		}
+}
