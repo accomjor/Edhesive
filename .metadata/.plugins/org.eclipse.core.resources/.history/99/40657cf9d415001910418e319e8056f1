@@ -13,7 +13,9 @@ public class Dashboard implements Comparable<Object> {
     private boolean checkEngine;
 
     public Dashboard() {
-        this(0, 0);
+        odometer = 0;
+        speedometer = 0;
+        checkEngine = false;
     }
 
     public Dashboard(int milesTravelled, int speed) {

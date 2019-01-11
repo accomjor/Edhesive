@@ -20,13 +20,13 @@ public class Dashboard implements Comparable<Object> {
     	checkEngine = false;
     	if(milesTravelled >= 0 && milesTravelled <= 99999) odometer = milesTravelled;
     	else {
-    		odometer = 0;
+    		//odometer = 0;
     		checkEngine = true;
     	}
     	
     	if(speed >= 0 && speed <= 100) speedometer = speed;
     	else {
-    		speedometer = 0;
+    		//speedometer = 0;
     		checkEngine = true;
     	}
     	

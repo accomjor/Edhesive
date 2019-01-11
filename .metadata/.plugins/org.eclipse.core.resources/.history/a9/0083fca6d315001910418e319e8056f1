@@ -6,14 +6,16 @@ package assignment;
  * A class which represents a car dashboard.
  */
 
-public class Dashboard implements Comparable<Object> {
+public class Dashboard implements Comparable {
 
     private int odometer;
     private int speedometer;
     private boolean checkEngine;
 
     public Dashboard() {
-        this(0, 0);
+        odometer = 0;
+        speedometer = 0;
+        checkEngine = false;
     }
 
     public Dashboard(int milesTravelled, int speed) {
@@ -111,13 +113,15 @@ public class Dashboard implements Comparable<Object> {
 	
 	public String difference(Dashboard d){
 		int dif = Math.abs(odometer - d.odometer);
-		
-		if(odometer > d.odometer){
-			return "Second car will need to drive for " + (int)((60*dif) / d.speedometer) +  " minutes to catch first car.";
-		} else if (odometer < d.odometer){
-			return "First car will need to drive for " + (int)((60*dif) / speedometer) +  " minutes to catch second car.";
-		} else {
-			return "";
-		}
+		if(odometer > d.odometer)
+			return "Second car will need to drive for "
+				+  (int)((60*dif) / d.speedometer)
+				+  " minutes to catch first car."
+				;
+		else
+			return "First car will need to drive for "
+				+  (int)((60*dif) / speedometer)
+				+  " minutes to catch second car."
+				;
 	}
 }
