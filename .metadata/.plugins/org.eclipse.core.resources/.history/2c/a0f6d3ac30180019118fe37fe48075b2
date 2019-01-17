@@ -1,0 +1,25 @@
+package coding_activity;
+
+public class Tester {
+	
+	public static void main(String[] args){
+		mystery (5, 7.0015);
+	}
+	
+	public static void mystery (int a) {
+	    System.out.println("A");
+	}
+
+	public static void mystery (double a) {
+	    System.out.println("B");
+	}
+
+	public static void mystery (int a, double b) {
+	    System.out.println("C");
+	}
+
+	public static void mystery (double a, int b) {
+	    System.out.println("D");
+	}
+	
+}

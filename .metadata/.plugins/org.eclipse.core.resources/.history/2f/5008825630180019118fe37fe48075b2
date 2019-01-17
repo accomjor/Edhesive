@@ -1,0 +1,19 @@
+package coding_activity;
+
+public class Tester {
+	
+	public static void main(String[] args){
+		mystery(6 * 8);
+	}
+	
+	public static void mystery (int x[]) {
+	    System.out.println("A");
+	}
+	public static void mystery (int x) {
+	    System.out.println("B");
+	}
+	public static void mystery (String x) {
+	    System.out.println("C");
+	}
+	
+}

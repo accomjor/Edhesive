@@ -24,16 +24,11 @@ public class NewClass {
     
     
     public static String s;
-    public static Character ch;
-    public static Integer in;
-    public static Long lo;
-    public static Double db;
-    public static Boolean bo;
     public static char c;
     public static int i;
     public static long l;
     public static double d;
-    public static boolean b;
+    public static boolean bool;
     public static void main(String args[]){
         
         // Code goes here..
@@ -56,4 +51,6 @@ public class NewClass {
         System.out.print((String) o);
         return;
     }
+    
+    
 }

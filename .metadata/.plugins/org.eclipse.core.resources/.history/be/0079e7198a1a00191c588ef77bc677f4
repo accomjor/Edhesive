@@ -1,0 +1,51 @@
+package docs;
+
+public class Jordan {
+	// print a STRING to the console on a new line.
+    // Updated: Version 1.0
+    public static void say(Object o){
+        System.out.println((String) o);
+        return;
+    }
+    
+    
+    // print an INT to the console on a new line.
+    // Updated: Version 1.5
+    @Deprecated
+    public static void say(int i){
+        System.out.println(i + "");
+        return;
+    }
+    
+    
+    // print a DOUBLE to the console on a new line.
+    // Updated: Version 1.5
+    @Deprecated
+    public static void say(double d){
+        System.out.println(d + "");
+        return;
+    }
+    
+    // print a raw STRING to the console.
+    // Updated: Version 1.1
+    public static void raw(Object o){
+        System.out.print((String) o);
+        return;
+    }
+    
+    // print a raw INT to the console.
+    // Updated: Version 1.5
+    @Deprecated
+    public static void raw(int i){
+        System.out.print(i + "");
+        return;
+    }
+    
+    // print a raw DOUBLE to the console.
+    // Updated: Version 1.5
+    @Deprecated
+    public static void raw(double d){
+        System.out.print(d + "");
+        return;
+    }
+}
