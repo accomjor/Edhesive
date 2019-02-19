@@ -1,0 +1,31 @@
+package coding_activity;
+
+import java.io.*;
+import java.lang.*;
+import java.util.*;
+import docs.Jordan;
+
+public class ClassWork {
+	
+	public static void main(String args[]){
+		Scanner scan = new Scanner(System.in);
+		boolean same = false;
+		double d = 0.0;
+		int i = 0;
+		d += scan.nextDouble();
+		i += scan.nextInt();
+		if(d == i){
+			say("input int and input double are the same");
+			same = true;
+		}else if((int) d == i){
+			say("input int and input double are very close to each other");
+		}else{
+			say("input int and input double are not the same");
+		}
+		say("Same? " + same);
+	}
+	public static void say(Object o){
+		Jordan.say(o);
+	}
+}
+

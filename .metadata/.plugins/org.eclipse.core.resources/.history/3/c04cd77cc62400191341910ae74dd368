@@ -1,0 +1,14 @@
+package assignment;
+
+import java.util.*;
+import java.awt.*;
+
+public class Main_starter {
+
+  public static void main (String[] args) {
+
+    // Write your code here
+	  Rectangle r = new Rectangle(5, 5, 5, 5);
+	  System.out.print(r.getFrame());
+  }
+}

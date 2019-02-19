@@ -1,0 +1,21 @@
+package coding_activity;
+
+import java.io.*;
+import java.lang.*;
+import java.util.*;
+
+import assignment.Jordan;
+
+public class ClassWork extends Jordan {
+	public static Jordan jordan1, jordan2;
+	public static Void main(String[] args){
+		jordan1 = new Jordan();
+		jordan2 = new Jordan();
+		if(jordan1.equals(jordan2)){
+			jordan1 = jordan2;
+		} else {
+			jordan2 = jordan1;
+		}
+		return null;
+	}
+}

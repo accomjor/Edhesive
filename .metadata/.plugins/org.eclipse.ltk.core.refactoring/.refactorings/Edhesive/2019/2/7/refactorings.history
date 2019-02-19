@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;assignment.Main_starter&apos; to &apos;Rectangle&apos;&#x0A;- Original project: &apos;Edhesive&apos;&#x0A;- Original element: &apos;assignment.Main_starter&apos;&#x0A;- Renamed element: &apos;assignment.Rectangle&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Main_starter&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;assignment{Main_starter.java[Main_starter" matchStrategy="1" name="Rectangle" qualified="false" references="true" similarDeclarations="false" stamp="1550257142320" textual="false" version="1.0"/>
+</session>

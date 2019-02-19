@@ -1,0 +1,12 @@
+package assignment;
+
+import java.util.*;
+
+public class MainGamewheel {
+
+	public static void main(String[] args){
+		GameWheel g = new GameWheel();
+		System.out.println("Player 1 total:" );
+	}
+	
+}

@@ -1,0 +1,75 @@
+package coding_activity;
+
+import java.io.*;
+import java.lang.*;
+import java.util.*;
+
+import assignment.Jordan;
+import assignment.Person;
+
+public class ClassWork extends Jordan {
+	
+	// This initializes 2 Jordans, which do nothing
+	public static Jordan jordan1, jordan2;
+	
+	// main void note that it uses a capital Void instead of void
+	public static void main(String[] args){
+		
+		double hi = 5.6;
+		int hiint = (int) hi;
+		long hilong = (long) hi;
+		char hichar = (char) hi;
+		float hifloat = (float) hi;
+		Double hidouble = (Double) hi;
+		
+		
+		say(hi);
+		say(hiint);
+		say(hilong);
+		say(hichar);
+		say(hifloat);
+		say(hidouble);
+		
+		// initialize each Jordan which does nothing
+		jordan1 = new Jordan();
+		jordan2 = new Jordan();
+		
+		// a comparison if statement that compares nothing to nothing
+		if(jordan1.equals(jordan2)){
+			jordan1 = jordan2;
+		} else {
+			jordan2 = jordan1;
+		}
+		return;
+	}
+	
+	// Not sure what this does, but it looks cool?
+	public class whatIsGoingOn extends Student {
+		public class whatIsGoingOn2 extends Student {
+			public class whatIsGoingOn3 extends Student {
+				public class whatIsGoingOn4 extends Student {
+					public class whatIsGoingOn5 extends Student {
+						public class whatIsGoingOn6 extends Student {
+							public class whatIsGoingOn7 extends Student {
+								public class whatIsGoingOn8 extends Student {
+									
+									public final boolean uselessBool[] = {true};
+									public void main(String[] args){
+										for(boolean b : uselessBool){
+											while(true){
+												b &= b;
+												break;
+											}
+										}
+										return;
+									}
+									
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

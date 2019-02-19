@@ -1,8 +1,9 @@
 package docs;
 
-public class Jordan {
+public abstract class Jordan {
 	// print an OBJECT to the console on a new line.
     // Updated: Version 2.0
+
     public static void say(Object o){
         System.out.println((String) o);
         return;

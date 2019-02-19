@@ -36,12 +36,12 @@ public class NewClass {
     public static boolean b;
     public static void main(String args[]){
         
+   
         // Code goes here..
     	
     }
     
     /***************************************************************************************************************/
-    
     
 	// print an OBJECT to the console on a new line.
     // Updated: Version 2.0
